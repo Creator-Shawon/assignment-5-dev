@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gray-100 p-4 pl-20 pr-20">
+<body class="p-4 pl-20 pr-20">
     <header>
         <!-- Header Section -->
         <div class="bg-white shadow-md p-4 flex rounded-lg justify-between">
@@ -35,8 +35,8 @@
                     <img src="./assets/checkbox.png" alt="">
                     <div id="nav-number" class="text-2xl font-bold">23</div>
                 </div>
-                <div class="bg-gray-200 rounded-full p-2">
-                    <img src="./assets/theme-btn.png" alt="">
+                <div class="bg-gray-200 p-2 rounded-full cursor-pointer">
+                    <img id="bgChange" src="./assets/theme-btn.png" alt="">
                 </div>
             </div>
         </div>
@@ -46,26 +46,24 @@
             <div class="col-span-9 space-y-6">
                 <div class="grid grid-cols-4 gap-4">
                     <!-- Assigned Task -->
-                    <div class="bg-white p-4 rounded-lg shadow-md flex gap-3 items-start">
+                    <div class="bg-white shadow-md flex gap-4 items-center p-4 rounded-md justify-center">
                         <div>
                             <img src="./assets/checkbox.png" alt="">
                         </div>
-                        <div>
-
+                        <div class="flex items-center gap-4 bg-custom1 p-4 rounded-md justify-center">
                             <div id="task-complete" class="text-blue-500 text-xl font-bold">6</div>
                             <div class="text-gray-500 text-sm">Task Assigned</div>
-
                         </div>
                     </div>
                     <!-- Discover Something New Today-->
-                    <div
-                        class="bg-gradient-to-r col-span-2 from-blue-500 to-purple-500 text-white p-4 rounded-lg shadow-md flex items-center justify-center">
+                    <div id="discover"
+                        class="cursor-pointer bg-gradient-to-r col-span-2 from-blue-500 to-blue-300 text-white p-4 rounded-lg shadow-md flex items-center justify-center">
                         <img src="./assets/board.png" alt="">
                         <div class="text-lg font-semibold">Discover Something New Today!</div>
                     </div>
                     <div class="bg-white p-4  rounded-lg shadow-md flex gap-3 items-center">
                         <img src="./assets/calender.png" alt="">
-                        <div class="text-gray-500 text-sm font-bold">Tue Feb 25, 2025</div>
+                        <div id="currentDate" class="text-gray-500 text-sm font-bold">Tue Feb 25, 2025</div>
                     </div>
                 </div>
 
@@ -73,66 +71,66 @@
 
                 <div class="grid grid-cols-3 gap-4">
                     <!-- Task Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <div class="text-gray-500 text-sm">Shop Ease</div>
-                        <div class="font-bold text-lg">Fix Mobile Button Issue</div>
-                        <p class="text-gray-500 text-sm mt-2">A card component has a figure, body, title, and action
+                    <div class="bg-white p-4 rounded-md shadow-xl">
+                        <div class="text-gray-500 text-sm bg-gray-100 rounded-md">Shop Ease</div>
+                        <div id="title-1" class="font-bold text-lg">Fix Mobile Button Issue</div>
+                        <p class="text-gray-500 text-sm mt-2 bg-gray-100 rounded-md">A card component has a figure, body, title, and action
                             parts.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-gray-500 text-sm">Deadline: 21 March 2025</span>
-                            <button class="bg-purple-600 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
+                            <button class="bg-blue-500 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <div class="text-gray-500 text-sm">Soft Pay</div>
-                        <div class="font-bold text-lg">Add Pay Success Modal</div>
-                        <p class="text-gray-500 text-sm mt-2">A card component has a figure, body, title, and action
+                    <div class="bg-white p-4 rounded-md shadow-xl">
+                        <div class="text-gray-500 text-sm bg-gray-100 rounded-md">Soft Pay</div>
+                        <div id="title-2" class="font-bold text-lg">Add Pay Success Modal</div>
+                        <p class="text-gray-500 text-sm mt-2 bg-gray-100 rounded-md">A card component has a figure, body, title, and action
                             parts.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-gray-500 text-sm">Deadline: 25 March 2025</span>
-                            <button class="bg-purple-600 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
+                            <button class="bg-blue-500 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
                         </div>
                     </div>
 
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <div class="text-gray-500 text-sm">Meta</div>
-                        <div class="font-bold text-lg">Add New Reaction 🙌</div>
-                        <p class="text-gray-500 text-sm mt-2">A card component has a figure, body, title, and action
+                    <div class="bg-white p-4 rounded-md shadow-xl">
+                        <div class="text-gray-500 text-sm bg-gray-100 rounded-md">Meta</div>
+                        <div id="title-3" class="font-bold text-lg">Add New Reaction 🙌</div>
+                        <p class="text-gray-500 text-sm mt-2 bg-gray-100 rounded-md">A card component has a figure, body, title, and action
                             parts.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-gray-500 text-sm">Deadline: 31 March 2025</span>
-                            <button class="bg-purple-600 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
+                            <button class="bg-blue-500 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <div class="text-gray-500 text-sm">Meta</div>
-                        <div class="font-bold text-lg">Add New Reaction 🙌</div>
-                        <p class="text-gray-500 text-sm mt-2">A card component has a figure, body, title, and action
+                    <div class="bg-white p-4 rounded-md shadow-xl">
+                        <div class="text-gray-500 text-sm bg-gray-100 rounded-md">Programming Hero</div>
+                        <div id="title-4" class="font-bold text-lg">Fix Video Loading Issue 🙌</div>
+                        <p class="text-gray-500 text-sm mt-2 bg-gray-100 rounded-md">A card component has a figure, body, title, and action
                             parts.</p>
                         <div class="flex justify-between items-center mt-4">
-                            <span class="text-gray-500 text-sm">Deadline: 31 March 2025</span>
-                            <button class="bg-purple-600 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
+                            <span class="text-gray-500 text-sm">Deadline: 25 April 2025</span>
+                            <button class="bg-blue-500 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <div class="text-gray-500 text-sm">Meta</div>
-                        <div class="font-bold text-lg">Add New Reaction 🙌</div>
-                        <p class="text-gray-500 text-sm mt-2">A card component has a figure, body, title, and action
+                    <div class="bg-white p-4 rounded-md shadow-xl">
+                        <div class="text-gray-500 text-sm bg-gray-100 rounded-md">Google LLC</div>
+                        <div id="title-5" class="font-bold text-lg">Integrate AI Search 🙌</div>
+                        <p class="text-gray-500 text-sm mt-2 bg-gray-100 rounded-md">A card component has a figure, body, title, and action
                             parts.</p>
                         <div class="flex justify-between items-center mt-4">
-                            <span class="text-gray-500 text-sm">Deadline: 31 March 2025</span>
-                            <button class="bg-purple-600 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
+                            <span class="text-gray-500 text-sm">Deadline: 05 May 2025</span>
+                            <button class="bg-blue-500 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
                         </div>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <div class="text-gray-500 text-sm">Meta</div>
-                        <div class="font-bold text-lg">Add New Reaction 🙌</div>
-                        <p class="text-gray-500 text-sm mt-2">A card component has a figure, body, title, and action
+                    <div class="bg-white p-4 rounded-md shadow-xl">
+                        <div class="text-gray-500 text-sm bg-gray-100 rounded-md">Polygon Tech</div>
+                        <div id="title-6" class="font-bold text-lg">Review Ami Probashi Site 🙌</div>
+                        <p class="text-gray-500 text-sm mt-2 bg-gray-100 rounded-md">A card component has a figure, body, title, and action
                             parts.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-gray-500 text-sm">Deadline: 31 March 2025</span>
-                            <button class="bg-purple-600 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
+                            <button class="bg-blue-500 cursor-pointer text-white px-4 py-1 rounded-lg text-sm completed-btn ">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -144,12 +142,32 @@
                     <span>🕒</span>
                     <span>Activity Log</span>
                 </div>
-                <button class="bg-purple-600 cursor-pointer text-white px-4 py-2 rounded-lg mt-4 w-full">Clear History</button>
+                <button id="clearHistory" class="bg-blue-500 cursor-pointer text-white px-4 py-2 rounded-lg mt-4 w-full">Clear History</button>
+
+                <div class="relative mt-3">
+                    <div class="absolute left-[-16px] right-[-16px] border-t-2 border-dashed border-gray-300"></div>
+                </div>
+                <div id="activity-log-container">
+
+                </div>
             </div>
         </div>
         </div>
 
 </main>
+
+<script>
+    const colors = ['#BECEF3', '#C8E3D7', '#EBEBFB', '#CBB8D6', '#98D4C5']
+    let color = 0;
+    document.getElementById('bgChange').addEventListener('click', function() {
+    document.body.style.backgroundColor = colors[color];
+    color++
+    if(color>colors.length){
+        color = 0;
+    } // Change to any color you want
+});
+</script>
+<script src="./utilities.js"></script>
 <script src="./script.js"></script>
 </body>
 
